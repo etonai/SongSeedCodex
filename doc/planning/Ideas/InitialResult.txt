@@ -1,0 +1,10 @@
+96% 5 hr usage left
+99% weekly usage left
+
+Built a fresh Jetpack Compose Android MVP from the plan in this workspace. The app now includes Home, Improv mode selection, Improv prompt generation for Normal and Difficult modes, Rhyme Drill with Easy/Normal filtering, and a Settings screen backed by DataStore for repeat avoidance, timer seconds, and enabled improv categories.
+
+The main app flow lives in SongSeedApp.kt, generation logic is in ImprovRepository.kt and RhymeRepository.kt, and settings persistence is in SettingsRepository.kt. I also added the Android project files like app/build.gradle.kts, AndroidManifest.xml, and MainActivity.kt.
+
+I wasn’t able to run a build in this environment because there’s no Gradle wrapper in the repo and no local gradle command installed here, so this is an implementation handoff rather than a verified compile. One assumption I made is that a clean MVP was the right starting point since the workspace only contained the planning doc and no existing Android project.
+
+

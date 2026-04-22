@@ -1,0 +1,4 @@
+com.songseed.songseed.test.app-androidTest-0 C:\dev\songseed\SongSeedCodex\app\build\generated\res\resValues\androidTest\debug
+com.songseed.songseed.test.app-mergeDebugAndroidTestResources-1 C:\dev\songseed\SongSeedCodex\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.songseed.songseed.test.app-mergeDebugAndroidTestResources-2 C:\dev\songseed\SongSeedCodex\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.songseed.songseed.test.app-debugAndroidTest-3 C:\dev\songseed\SongSeedCodex\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
