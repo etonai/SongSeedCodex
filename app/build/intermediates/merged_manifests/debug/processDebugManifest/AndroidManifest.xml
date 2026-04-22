@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.songseed.songseed"
+    package="com.songseed.songseedcodex"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -9,13 +9,13 @@
         android:targetSdkVersion="34" />
 
     <permission
-        android:name="com.songseed.songseed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.songseed.songseedcodex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.songseed.songseed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.songseed.songseedcodex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.songseed.songseed.SongSeedApplication"
+        android:name="com.songseed.songseedcodex.SongSeedCodexApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -25,9 +25,9 @@
         android:roundIcon="@android:drawable/sym_def_app_icon"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.SongSeed" >
+        android:theme="@style/Theme.SongSeedCodex" >
         <activity
-            android:name="com.songseed.songseed.MainActivity"
+            android:name="com.songseed.songseedcodex.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.songseed.songseed.androidx-startup"
+            android:authorities="com.songseed.songseedcodex.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

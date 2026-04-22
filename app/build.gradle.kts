@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.songseed.songseed"
+    namespace = "com.songseed.songseedcodex"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.songseed.songseed"
+        applicationId = "com.songseed.songseedcodex"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

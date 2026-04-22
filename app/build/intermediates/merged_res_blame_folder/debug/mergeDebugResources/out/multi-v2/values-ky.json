@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.songseed.songseed.app-mergeDebugResources-67:/values-ky/values-ky.xml",
+            "outputFile": "com.songseed.songseedcodex.app-mergeDebugResources-67:/values-ky/values-ky.xml",
             "map": [
                 {
                     "source": "C:\\Users\\edwar\\.gradle\\caches\\9.0-milestone-1\\transforms\\1f542631745ffbc2d55bf90e3bcdba81\\transformed\\appcompat-1.6.1\\res\\values-ky\\values-ky.xml",

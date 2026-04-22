@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.songseed.songseed.app-mergeDebugResources-67:/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "com.songseed.songseedcodex.app-mergeDebugResources-67:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\edwar\\.gradle\\caches\\9.0-milestone-1\\transforms\\005bb699d77c832971130f8006c085ee\\transformed\\material3-release\\res\\values-pt-rPT\\values-pt-rPT.xml",

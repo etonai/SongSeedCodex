@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.songseed.songseed.app-mergeDebugResources-67:/values-iw/values-iw.xml",
+            "outputFile": "com.songseed.songseedcodex.app-mergeDebugResources-67:/values-iw/values-iw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\edwar\\.gradle\\caches\\9.0-milestone-1\\transforms\\808069721e31f5c2e504f1cb951f958f\\transformed\\core-1.13.1\\res\\values-iw\\values-iw.xml",

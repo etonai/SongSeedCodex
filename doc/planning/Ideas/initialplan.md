@@ -193,7 +193,7 @@ A word qualifies as **Easy** if it meets either condition:
 
 ### Layout
 
-* Title: **SongSeed**
+* Title: **SongSeedCodex**
 * Main buttons:
 
   * **Improv Song**
@@ -412,7 +412,7 @@ data class SessionState(
 
 # Product Summary
 
-SongSeed is built around a clear structure:
+SongSeedCodex is built around a clear structure:
 
 * **Improv difficulty = number of ideas**
 * **Rhyme difficulty = word simplicity vs complexity**

@@ -1,19 +1,19 @@
-# DevCycle 001: SongSeed Android MVP First Pass
+# DevCycle 001: SongSeedCodex Android MVP First Pass
 
 **Status:** Work Complete
 **Start Date:** 2026-04-22
 **Target Completion:** 2026-04-22
-**Focus:** Convert the initial SongSeed concept into a first working Android app structure with the core MVP flows implemented.
+**Focus:** Convert the initial SongSeedCodex concept into a first working Android app structure with the core MVP flows implemented.
 
 ---
 
 ## Goal
 
-This cycle turns the initial SongSeed app plan into a concrete first Android implementation. The immediate objective was to create a usable Jetpack Compose MVP that reflects the product structure in the planning document rather than leaving the app at the idea stage. This matters now because it creates a real codebase we can iterate on, test, refine, and extend in future DevCycles.
+This cycle turns the initial SongSeedCodex app plan into a concrete first Android implementation. The immediate objective was to create a usable Jetpack Compose MVP that reflects the product structure in the planning document rather than leaving the app at the idea stage. This matters now because it creates a real codebase we can iterate on, test, refine, and extend in future DevCycles.
 
 ## Desired Outcome
 
-At the end of this cycle, the project should contain a structured Android app with the main SongSeed practice flows implemented: Home, Improv Song mode selection, Improv prompt generation, Rhyme Drill generation, and Settings. The app should also include starter data, app architecture, and persistence for basic settings so future cycles can focus on refinement instead of initial scaffolding.
+At the end of this cycle, the project should contain a structured Android app with the main SongSeedCodex practice flows implemented: Home, Improv Song mode selection, Improv prompt generation, Rhyme Drill generation, and Settings. The app should also include starter data, app architecture, and persistence for basic settings so future cycles can focus on refinement instead of initial scaffolding.
 
 ---
 
@@ -23,7 +23,7 @@ At the end of this cycle, the project should contain a structured Android app wi
 
 **Status:** Work Complete
 
-- [x] Create a fresh Android project structure for SongSeed
+- [x] Create a fresh Android project structure for SongSeedCodex
 - [x] Add Gradle configuration for a Kotlin + Jetpack Compose app
 - [x] Establish package structure for data, domain, UI, navigation, theme, and view models
 - [x] Add Android manifest, application class, and main activity
@@ -90,7 +90,7 @@ Added base Compose theming in [Theme.kt](C:/dev/songseed/SongSeedCodex/app/src/m
 **Work Deferred:** Build verification, Gradle wrapper setup, testing, and UI polish
 
 **Accomplishments:**
-- Built the first SongSeed Android MVP structure from the initial planning document.
+- Built the first SongSeedCodex Android MVP structure from the initial planning document.
 - Implemented the core app flows for Home, Improv Song, Rhyme Drill, and Settings.
 - Added prompt and word generation logic aligned to the initial plan.
 - Added persistence for core settings using DataStore.

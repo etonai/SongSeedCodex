@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.songseed.songseed"
+3    package="com.songseed.songseedcodex"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -10,19 +10,19 @@
 10
 11    <permission
 11-->[androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-12        android:name="com.songseed.songseed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12        android:name="com.songseed.songseedcodex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 12-->[androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
 13-->[androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 14
-15    <uses-permission android:name="com.songseed.songseed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15    <uses-permission android:name="com.songseed.songseedcodex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 15-->[androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 15-->[androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 16
 17    <application
 17-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:4:5-21:19
-18        android:name="com.songseed.songseed.SongSeedApplication"
-18-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:5:9-44
+18        android:name="com.songseed.songseedcodex.SongSeedCodexApplication"
+18-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:5:9-49
 19        android:allowBackup="true"
 19-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:6:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -38,11 +38,11 @@
 26        android:supportsRtl="true"
 26-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:10:9-35
 27        android:testOnly="true"
-28        android:theme="@style/Theme.SongSeed" >
-28-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:11:9-46
+28        android:theme="@style/Theme.SongSeedCodex" >
+28-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:11:9-51
 29        <activity
 29-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:12:9-20:20
-30            android:name="com.songseed.songseed.MainActivity"
+30            android:name="com.songseed.songseedcodex.MainActivity"
 30-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:13:13-41
 31            android:exported="true" >
 31-->C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:14:13-36
@@ -74,7 +74,7 @@
 45-->[androidx.emoji2:emoji2:1.3.0] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\414e60ff2f4c98c0ccf4803c6dd49b29\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 46            android:name="androidx.startup.InitializationProvider"
 46-->[androidx.emoji2:emoji2:1.3.0] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\414e60ff2f4c98c0ccf4803c6dd49b29\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-47            android:authorities="com.songseed.songseed.androidx-startup"
+47            android:authorities="com.songseed.songseedcodex.androidx-startup"
 47-->[androidx.emoji2:emoji2:1.3.0] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\414e60ff2f4c98c0ccf4803c6dd49b29\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 48            android:exported="false" >
 48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\414e60ff2f4c98c0ccf4803c6dd49b29\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37

@@ -131,10 +131,10 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\edwar\.gradle\cach
 	android:allowBackup
 		ADDED from C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:11:9-46
+		ADDED from C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:11:9-51
 	android:name
-		ADDED from C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:5:9-44
-activity#com.songseed.songseed.MainActivity
+		ADDED from C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:5:9-49
+activity#com.songseed.songseedcodex.MainActivity
 ADDED from C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:12:9-20:20
 	android:exported
 		ADDED from C:\dev\songseed\SongSeedCodex\app\src\main\AndroidManifest.xml:14:13-36
@@ -366,7 +366,7 @@ ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milesto
 		ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-permission#com.songseed.songseed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.songseed.songseedcodex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
@@ -376,7 +376,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-uses-permission#com.songseed.songseed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.songseed.songseedcodex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] C:\Users\edwar\.gradle\caches\9.0-milestone-1\transforms\808069721e31f5c2e504f1cb951f958f\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
