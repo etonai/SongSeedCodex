@@ -1,0 +1,38 @@
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local configuration
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Kotlin / Java compiled artifacts
+*.class
+
+# APK / bundle outputs
+*.apk
+*.aab
+
+# Native / crash outputs
+*.hprof
+
+# Keystore files
+*.jks
+*.keystore
+
+# Misc temporary files
+*.tmp
+*.temp
+*.swp
