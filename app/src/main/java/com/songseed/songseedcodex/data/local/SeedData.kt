@@ -568,7 +568,12 @@ object SeedData {
         Word("dead", 1),
         Word("led", 1),
         Word("said", 1),
-        Word("thread", 1)
+        Word("thread", 1),
+        Word("chill", 1),
+        Word("cool", 1),
+        Word("rule", 1),
+        Word("ed", 1),
+        Word("fill", 1)
     )
 
     private val normalRhymeWords: List<Word> = listOf(
