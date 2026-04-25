@@ -11,6 +11,7 @@ import androidx.navigation.navArgument
 import com.songseed.songseedcodex.data.ImprovRepository
 import com.songseed.songseedcodex.data.RhymeRepository
 import com.songseed.songseedcodex.data.SettingsRepository
+import com.songseed.songseedcodex.data.SlantRhymeRepository
 import com.songseed.songseedcodex.domain.ImprovMode
 import com.songseed.songseedcodex.ui.navigation.Routes
 import com.songseed.songseedcodex.ui.screens.HomeScreen
@@ -18,15 +19,18 @@ import com.songseed.songseedcodex.ui.screens.ImprovModeSelectionScreen
 import com.songseed.songseedcodex.ui.screens.ImprovScreen
 import com.songseed.songseedcodex.ui.screens.RhymeScreen
 import com.songseed.songseedcodex.ui.screens.SettingsScreen
+import com.songseed.songseedcodex.ui.screens.SlantRhymeScreen
 import com.songseed.songseedcodex.ui.viewmodel.ImprovViewModel
 import com.songseed.songseedcodex.ui.viewmodel.RhymeViewModel
 import com.songseed.songseedcodex.ui.viewmodel.SettingsViewModel
+import com.songseed.songseedcodex.ui.viewmodel.SlantRhymeViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 
 @Composable
 fun SongSeedCodexApp(
     improvRepository: ImprovRepository,
     rhymeRepository: RhymeRepository,
+    slantRhymeRepository: SlantRhymeRepository,
     settingsRepository: SettingsRepository
 ) {
     val navController = rememberNavController()
@@ -39,6 +43,7 @@ fun SongSeedCodexApp(
             HomeScreen(
                 onImprovClick = { navController.navigate(Routes.ImprovModes) },
                 onRhymeClick = { navController.navigate(Routes.Rhyme) },
+                onSlantRhymeClick = { navController.navigate(Routes.SlantRhyme) },
                 onSettingsClick = { navController.navigate(Routes.Settings) }
             )
         }
@@ -78,6 +83,20 @@ fun SongSeedCodexApp(
                 onBack = { navController.popBackStack() },
                 onDifficultyChange = viewModel::setDifficulty,
                 onNextWord = viewModel::generateNextWord
+            )
+        }
+
+        composable(Routes.SlantRhyme) {
+            val viewModel: SlantRhymeViewModel = viewModel(
+                factory = SlantRhymeViewModel.factory(slantRhymeRepository, settingsRepository)
+            )
+            val state by viewModel.uiState.collectAsStateWithLifecycle()
+
+            SlantRhymeScreen(
+                state = state,
+                onBack = { navController.popBackStack() },
+                onNextWord = viewModel::generateNextPair,
+                onShowExample = viewModel::showExample
             )
         }
 

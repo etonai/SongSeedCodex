@@ -20,6 +20,7 @@ class MainActivity : ComponentActivity() {
                     SongSeedCodexApp(
                         improvRepository = app.improvRepository,
                         rhymeRepository = app.rhymeRepository,
+                        slantRhymeRepository = app.slantRhymeRepository,
                         settingsRepository = app.settingsRepository
                     )
                 }

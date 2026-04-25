@@ -1,10 +1,12 @@
 package com.songseed.songseedcodex.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Card
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Slider
@@ -13,7 +15,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.songseed.songseedcodex.BuildConfig
 import com.songseed.songseedcodex.domain.ImprovCategory
 import com.songseed.songseedcodex.domain.SettingsState
 
@@ -44,7 +48,7 @@ fun SettingsScreen(
             }
 
             Card(modifier = Modifier.fillMaxWidth()) {
-                androidx.compose.foundation.layout.Column(
+                Column(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(16.dp),
@@ -86,6 +90,30 @@ fun SettingsScreen(
                     .height(56.dp)
             ) {
                 Text("Back")
+            }
+
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 12.dp, bottom = 8.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                Text(
+                    text = "SongSeedCodex",
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold
+                )
+                Text(
+                    text = "Version ${BuildConfig.VERSION_NAME}",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Text(
+                    text = "Developed by Edward T. Tonai",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
             }
         }
     }

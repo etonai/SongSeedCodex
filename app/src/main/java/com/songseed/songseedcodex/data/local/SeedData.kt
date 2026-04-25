@@ -1,6 +1,7 @@
 package com.songseed.songseedcodex.data.local
 
 import com.songseed.songseedcodex.domain.ImprovCategory
+import com.songseed.songseedcodex.domain.SlantRhymePair
 import com.songseed.songseedcodex.domain.Word
 
 object SeedData {
@@ -749,4 +750,37 @@ object SeedData {
     )
 
     val rhymeWords: List<Word> = easyRhymeWords + normalRhymeWords
+
+    val slantRhymePairs: List<SlantRhymePair> = listOf(
+        SlantRhymePair(seed = "wake", example = "wait"),
+        SlantRhymePair(seed = "rain", example = "rang"),
+        SlantRhymePair(seed = "heart", example = "hard"),
+        SlantRhymePair(seed = "night", example = "knife"),
+        SlantRhymePair(seed = "blue", example = "bloom"),
+        SlantRhymePair(seed = "song", example = "gone"),
+        SlantRhymePair(seed = "shore", example = "short"),
+        SlantRhymePair(seed = "wind", example = "win"),
+        SlantRhymePair(seed = "town", example = "sound"),
+        SlantRhymePair(seed = "worm", example = "swarm"),
+        SlantRhymePair(seed = "fate", example = "save"),
+        SlantRhymePair(seed = "sky", example = "tide"),
+        SlantRhymePair(seed = "broad", example = "thought"),
+        SlantRhymePair(seed = "hinge", example = "orange"),
+        SlantRhymePair(seed = "test", example = "confess"),
+        SlantRhymePair(seed = "lake", example = "fate"),
+        SlantRhymePair(seed = "home", example = "bone"),
+        SlantRhymePair(seed = "dash", example = "relax"),
+        SlantRhymePair(seed = "cold", example = "soul"),
+        SlantRhymePair(seed = "time", example = "mine"),
+        SlantRhymePair(seed = "hat", example = "bad"),
+        SlantRhymePair(seed = "crate", example = "braid"),
+        SlantRhymePair(seed = "pallate", example = "polite"),
+        SlantRhymePair(seed = "queen", example = "regime"),
+        SlantRhymePair(seed = "seen", example = "scheme"),
+        SlantRhymePair(seed = "common", example = "forgotten"),
+        SlantRhymePair(seed = "cloud", example = "round"),
+        SlantRhymePair(seed = "squeak", example = "grease"),
+        SlantRhymePair(seed = "cat", example = "sad"),
+        SlantRhymePair(seed = "ways", example = "grace")
+    )
 }

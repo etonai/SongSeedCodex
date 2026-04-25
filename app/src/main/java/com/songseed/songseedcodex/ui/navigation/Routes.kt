@@ -5,6 +5,7 @@ object Routes {
     const val ImprovModes = "improv_modes"
     const val Improv = "improv/{mode}"
     const val Rhyme = "rhyme"
+    const val SlantRhyme = "slant_rhyme"
     const val Settings = "settings"
 
     fun improv(mode: String): String = "improv/$mode"

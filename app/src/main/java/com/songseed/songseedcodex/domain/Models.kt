@@ -44,6 +44,11 @@ data class Word(
     val syllableCount: Int
 )
 
+data class SlantRhymePair(
+    val seed: String,
+    val example: String
+)
+
 data class SettingsState(
     val avoidRecentRepeats: Boolean = true,
     val rhymeTimerSeconds: Int = 60,
