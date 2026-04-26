@@ -2,6 +2,7 @@ package com.songseed.songseedcodex
 
 import android.app.Application
 import com.songseed.songseedcodex.data.ImprovRepository
+import com.songseed.songseedcodex.data.LooseRhymeRepository
 import com.songseed.songseedcodex.data.RhymeRepository
 import com.songseed.songseedcodex.data.SettingsRepository
 import com.songseed.songseedcodex.data.SlantRhymeRepository
@@ -19,11 +20,15 @@ class SongSeedCodexApplication : Application() {
     lateinit var slantRhymeRepository: SlantRhymeRepository
         private set
 
+    lateinit var looseRhymeRepository: LooseRhymeRepository
+        private set
+
     override fun onCreate() {
         super.onCreate()
         settingsRepository = SettingsRepository(this)
         improvRepository = ImprovRepository()
         rhymeRepository = RhymeRepository()
         slantRhymeRepository = SlantRhymeRepository()
+        looseRhymeRepository = LooseRhymeRepository()
     }
 }

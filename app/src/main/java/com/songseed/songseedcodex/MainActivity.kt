@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
                         improvRepository = app.improvRepository,
                         rhymeRepository = app.rhymeRepository,
                         slantRhymeRepository = app.slantRhymeRepository,
+                        looseRhymeRepository = app.looseRhymeRepository,
                         settingsRepository = app.settingsRepository
                     )
                 }

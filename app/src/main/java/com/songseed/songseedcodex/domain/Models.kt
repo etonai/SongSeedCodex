@@ -16,6 +16,17 @@ enum class RhymeDifficulty(val label: String) {
     Normal("Normal")
 }
 
+enum class LooseRhymeDrillSource(val routeValue: String, val label: String) {
+    All("all", "All"),
+    HardEndingShift("hard-ending-shift", "Hard Ending Shift");
+
+    companion object {
+        fun fromRouteValue(value: String?): LooseRhymeDrillSource {
+            return values().firstOrNull { it.routeValue == value } ?: HardEndingShift
+        }
+    }
+}
+
 enum class ImprovCategory(val displayName: String) {
     Themes("Themes"),
     Images("Images"),

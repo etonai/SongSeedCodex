@@ -783,4 +783,22 @@ object SeedData {
         SlantRhymePair(seed = "cat", example = "sad"),
         SlantRhymePair(seed = "ways", example = "grace")
     )
+
+    val hardEndingShiftPairs: List<SlantRhymePair> = listOf(
+        SlantRhymePair(seed = "bad", example = "cat"),
+        SlantRhymePair(seed = "cat", example = "map"),
+        SlantRhymePair(seed = "bed", example = "set"),
+        SlantRhymePair(seed = "dog", example = "top"),
+        SlantRhymePair(seed = "sun", example = "cup"),
+        SlantRhymePair(seed = "book", example = "put"),
+        SlantRhymePair(seed = "stone", example = "note"),
+        SlantRhymePair(seed = "grass", example = "cap"),
+        SlantRhymePair(seed = "rain", example = "late"),
+        SlantRhymePair(seed = "plate", example = "make"),
+        SlantRhymePair(seed = "road", example = "note"),
+        SlantRhymePair(seed = "made", example = "take"),
+        SlantRhymePair(seed = "side", example = "time"),
+        SlantRhymePair(seed = "red", example = "bet"),
+        SlantRhymePair(seed = "mud", example = "cut")
+    )
 }

@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 fun HomeScreen(
     onImprovClick: () -> Unit,
     onRhymeClick: () -> Unit,
-    onSlantRhymeClick: () -> Unit,
+    onLooseRhymesClick: () -> Unit,
     onSettingsClick: () -> Unit
 ) {
     SongSeedCodexScaffold(title = "SongSeedCodex") { paddingValues ->
@@ -51,12 +51,12 @@ fun HomeScreen(
             }
 
             Button(
-                onClick = onSlantRhymeClick,
+                onClick = onLooseRhymesClick,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(56.dp)
             ) {
-                Text("Slant Rhyme Drill")
+                Text("Loose Rhymes")
             }
 
             OutlinedButton(
