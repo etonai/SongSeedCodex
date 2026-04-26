@@ -95,13 +95,14 @@ Implemented in [LooseRhymesScreen.kt](C:/dev/songseed/SongSeedCodex/app/src/main
 - [x] Provide only two visible actions: Show Example and Next Word
 - [x] Make Show Example reveal one predefined example for the current prompt
 - [x] Make Next Word advance to a new prompt and hide the previous example
+- [x] Add a Main Page action from the Hard Ending Shift drill
 - [x] Avoid correctness checking, answer submission, scorekeeping, and response-count requirements
 - [x] Ensure the drill supports mental or vocal participation without forcing typed input
 
 **Technical Notes:**
 The existing Slant Rhyme drill is the closest behavioral reference. If the current UI has extra controls that are not appropriate for Hard Ending Shift, either parameterize the shared drill UI or create a small dedicated screen while keeping repository and view-model logic reusable.
 
-Implementation uses a dedicated `LooseRhymeDrillScreen` so Hard Ending Shift keeps only the required Show Example and Next Word actions.
+Implementation uses a dedicated `LooseRhymeDrillScreen` so Hard Ending Shift keeps the required Show Example and Next Word actions, plus a Main Page action that returns directly to Home.
 
 ### Phase 5: Verification
 
@@ -168,10 +169,11 @@ The source design note says that once this feels good in use, future work should
 - Added Loose Rhymes as the home-screen entry point, with Default, All, and Hard Ending Shift options.
 - Added Hard Ending Shift seed data, bidirectional prompt behavior, and an All source that combines Slant Rhyme and Hard Ending Shift pairs.
 - Added the Hard Ending Shift description screen and a focused two-button Loose Rhymes drill screen.
+- Added a Main Page action to the Loose Rhymes drill screen.
 
 **Metrics:**
 - Files modified: 11
-- Build verification: `.\gradlew.bat assembleDebug` completed successfully
+- Build verification: `.\gradlew.bat assembleDebug` completed successfully; rerun after adding Main Page also completed successfully
 
 **Lessons / Notes:**
 The existing Slant Rhyme repository pattern translated cleanly to Loose Rhymes. A dedicated drill screen was the simplest way to preserve the exact two-button interaction required for Hard Ending Shift while still reusing the pair and recent-repeat behavior.

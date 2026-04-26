@@ -131,7 +131,8 @@ fun HardEndingShiftDescriptionScreen(
 fun LooseRhymeDrillScreen(
     state: LooseRhymeUiState,
     onNextWord: () -> Unit,
-    onShowExample: () -> Unit
+    onShowExample: () -> Unit,
+    onMainPage: () -> Unit
 ) {
     val currentPair = state.currentPair
 
@@ -165,6 +166,15 @@ fun LooseRhymeDrillScreen(
                     .height(56.dp)
             ) {
                 Text("Next Word")
+            }
+
+            OutlinedButton(
+                onClick = onMainPage,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(56.dp)
+            ) {
+                Text("Main Page")
             }
         }
     }

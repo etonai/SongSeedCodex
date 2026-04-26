@@ -136,7 +136,14 @@ fun SongSeedCodexApp(
             LooseRhymeDrillScreen(
                 state = state,
                 onNextWord = viewModel::generateNextPair,
-                onShowExample = viewModel::showExample
+                onShowExample = viewModel::showExample,
+                onMainPage = {
+                    navController.navigate(Routes.Home) {
+                        popUpTo(Routes.Home) {
+                            inclusive = true
+                        }
+                    }
+                }
             )
         }
 
