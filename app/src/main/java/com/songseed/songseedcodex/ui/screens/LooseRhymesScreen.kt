@@ -17,7 +17,8 @@ fun LooseRhymesSelectionScreen(
     onBack: () -> Unit,
     onDefaultClick: () -> Unit,
     onAllClick: () -> Unit,
-    onHardEndingShiftClick: () -> Unit
+    onHardEndingShiftClick: () -> Unit,
+    onMultiSyllableClick: () -> Unit
 ) {
     SongSeedCodexScaffold(title = "Loose Rhymes") { paddingValues ->
         ScrollColumn(paddingValues = paddingValues) {
@@ -57,6 +58,71 @@ fun LooseRhymesSelectionScreen(
                     .height(56.dp)
             ) {
                 Text("Hard Ending Shift")
+            }
+
+            Button(
+                onClick = onMultiSyllableClick,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(56.dp)
+            ) {
+                Text("Multi-Syllable")
+            }
+
+            OutlinedButton(
+                onClick = onBack,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(56.dp)
+            ) {
+                Text("Back")
+            }
+        }
+    }
+}
+
+@Composable
+fun MultiSyllableDescriptionScreen(
+    onBack: () -> Unit,
+    onStartDrill: () -> Unit
+) {
+    SongSeedCodexScaffold(title = "Multi-Syllable Loose Rhymes") { paddingValues ->
+        ScrollColumn(paddingValues = paddingValues) {
+            HeroCard(
+                eyebrow = "Loose Rhyme Type",
+                text = "Multi-Syllable"
+            )
+
+            Text(
+                text = "These rhymes match the shape and sound of a word across multiple syllables.",
+                style = MaterialTheme.typography.bodyLarge
+            )
+            Text(
+                text = "Focus on similar rhythm, vowel flow, and stress pattern.",
+                style = MaterialTheme.typography.bodyLarge
+            )
+            Text(
+                text = "Avoid perfect rhymes. Aim for something that feels similar when spoken or sung.",
+                style = MaterialTheme.typography.bodyLarge
+            )
+
+            Text(
+                text = "Examples",
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold
+            )
+            Text(
+                text = "maybe -> daydream\ntaken -> paper\nbetter -> never",
+                style = MaterialTheme.typography.bodyLarge
+            )
+
+            Button(
+                onClick = onStartDrill,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(56.dp)
+            ) {
+                Text("Start Drill")
             }
 
             OutlinedButton(

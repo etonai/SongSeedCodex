@@ -18,7 +18,8 @@ enum class RhymeDifficulty(val label: String) {
 
 enum class LooseRhymeDrillSource(val routeValue: String, val label: String) {
     All("all", "All"),
-    HardEndingShift("hard-ending-shift", "Hard Ending Shift");
+    HardEndingShift("hard-ending-shift", "Hard Ending Shift"),
+    MultiSyllable("multi-syllable", "Multi-Syllable");
 
     companion object {
         fun fromRouteValue(value: String?): LooseRhymeDrillSource {

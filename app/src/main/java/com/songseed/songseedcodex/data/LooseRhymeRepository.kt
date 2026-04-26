@@ -14,8 +14,13 @@ class LooseRhymeRepository(
         avoidRecentRepeats: Boolean
     ): SlantRhymePair {
         val pairs = when (source) {
-            LooseRhymeDrillSource.All -> SeedData.slantRhymePairs + SeedData.hardEndingShiftPairs
+            LooseRhymeDrillSource.All -> {
+                SeedData.slantRhymePairs +
+                    SeedData.hardEndingShiftPairs +
+                    SeedData.multiSyllableLooseRhymePairs
+            }
             LooseRhymeDrillSource.HardEndingShift -> SeedData.hardEndingShiftPairs
+            LooseRhymeDrillSource.MultiSyllable -> SeedData.multiSyllableLooseRhymePairs
         }
         val primaryPool = if (avoidRecentRepeats) {
             pairs.filterNot {

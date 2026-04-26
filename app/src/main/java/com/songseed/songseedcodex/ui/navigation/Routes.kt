@@ -7,6 +7,7 @@ object Routes {
     const val Rhyme = "rhyme"
     const val LooseRhymes = "loose_rhymes"
     const val HardEndingShiftDescription = "loose_rhymes/hard-ending-shift"
+    const val MultiSyllableDescription = "loose_rhymes/multi-syllable"
     const val LooseRhymeDrill = "loose_rhymes/drill/{source}"
     const val SlantRhyme = "slant_rhyme"
     const val Settings = "settings"

@@ -801,4 +801,21 @@ object SeedData {
         SlantRhymePair(seed = "red", example = "bet"),
         SlantRhymePair(seed = "mud", example = "cut")
     )
+
+    val multiSyllableLooseRhymePairs: List<SlantRhymePair> = listOf(
+        SlantRhymePair(seed = "maybe", example = "daydream"),
+        SlantRhymePair(seed = "taken", example = "paper"),
+        SlantRhymePair(seed = "open", example = "broken"),
+        SlantRhymePair(seed = "better", example = "never"),
+        SlantRhymePair(seed = "number", example = "thunder"),
+        SlantRhymePair(seed = "feeling", example = "breathing"),
+        SlantRhymePair(seed = "matter", example = "after"),
+        SlantRhymePair(seed = "quiet", example = "giant"),
+        SlantRhymePair(seed = "heavy", example = "steady"),
+        SlantRhymePair(seed = "early", example = "journey"),
+        SlantRhymePair(seed = "silver", example = "river"),
+        SlantRhymePair(seed = "story", example = "glory"),
+        SlantRhymePair(seed = "music", example = "lucid"),
+        SlantRhymePair(seed = "echo", example = "mellow")
+    )
 }

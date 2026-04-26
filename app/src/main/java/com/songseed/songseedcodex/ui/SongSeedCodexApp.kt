@@ -22,6 +22,7 @@ import com.songseed.songseedcodex.ui.screens.ImprovModeSelectionScreen
 import com.songseed.songseedcodex.ui.screens.ImprovScreen
 import com.songseed.songseedcodex.ui.screens.LooseRhymeDrillScreen
 import com.songseed.songseedcodex.ui.screens.LooseRhymesSelectionScreen
+import com.songseed.songseedcodex.ui.screens.MultiSyllableDescriptionScreen
 import com.songseed.songseedcodex.ui.screens.RhymeScreen
 import com.songseed.songseedcodex.ui.screens.SettingsScreen
 import com.songseed.songseedcodex.ui.screens.SlantRhymeScreen
@@ -102,6 +103,9 @@ fun SongSeedCodexApp(
                 },
                 onHardEndingShiftClick = {
                     navController.navigate(Routes.HardEndingShiftDescription)
+                },
+                onMultiSyllableClick = {
+                    navController.navigate(Routes.MultiSyllableDescription)
                 }
             )
         }
@@ -112,6 +116,17 @@ fun SongSeedCodexApp(
                 onStartDrill = {
                     navController.navigate(
                         Routes.looseRhymeDrill(LooseRhymeDrillSource.HardEndingShift.routeValue)
+                    )
+                }
+            )
+        }
+
+        composable(Routes.MultiSyllableDescription) {
+            MultiSyllableDescriptionScreen(
+                onBack = { navController.popBackStack() },
+                onStartDrill = {
+                    navController.navigate(
+                        Routes.looseRhymeDrill(LooseRhymeDrillSource.MultiSyllable.routeValue)
                     )
                 }
             )
